@@ -1,0 +1,77 @@
+            /* MAX-1200 */
+            
+            @media (max-width: 1200px) {
+                .home__pack span,
+                .home__diametr span,
+                .home__price span {
+                    font-size: 13px;
+                }
+                .home__electro-img {
+                    left: -65%;
+                    width: 47vw;
+                    height: 200px;
+                }
+            }
+            /* MAX-1200 */
+            /* MAX-992 */
+            
+            @media (max-width: 992px) {
+                .home__pack ul,
+                .home__diametr ul {
+                    justify-content: flex-start;
+                }
+                .home__pack span,
+                .home__diametr span {
+                    margin-right: 10px;
+                }
+                .home__pack span,
+                .home__diametr span,
+                .home__price span {
+                    font-size: 16px;
+                }
+                .home__electro-img {
+                    left: 0%;
+                    width: 50vw;
+                    height: 200px;
+                }
+            }
+            /* MAX-992 */
+            /* MAX-768 */
+            
+            @media (max-width: 768px) {
+                .home__pack span,
+                .home__diametr span,
+                .home__price span {
+                    font-size: 12px;
+                }
+            }
+            /* MAX-768 */
+            /* MAX-576 */
+            
+            @media (max-width: 576px) {
+                header .d-flex {
+                    flex-direction: column;
+                    align-items: flex-start!important;
+                }
+                .header__hit {
+                    margin-top: 10px;
+                }
+                .wp__home {
+                    padding: 145px 0 36px 0;
+                }
+                .home__callback a {
+                    display: block;
+                    text-align: center;
+                }
+                .home__electro-img {
+                    margin: 0 auto;
+                    bottom: 23em;
+                    width: 100%;
+                    background-size: 90%;
+                    background-position: center;
+                }
+                .popup__title {
+                    padding: 10px 0px 20px 0px;
+                }
+            }
+            /* MAX-576 */

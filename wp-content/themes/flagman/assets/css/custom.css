@@ -1,0 +1,412 @@
+    /* Общие стили */
+    /* Подключение стилей */
+    
+    @font-face {
+        font-family: 'TT Norms';
+        src: url('../fonts/TTNorms-Bold.eot');
+        src: local('TT Norms Bold'), local('TTNorms-Bold'), url('../fonts/TTNorms-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/TTNorms-Bold.woff') format('woff'), url('../fonts/TTNorms-Bold.ttf') format('truetype');
+        font-weight: bold;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'TT Norms';
+        src: url('../fonts/TTNorms-Thin.eot');
+        src: local('TT Norms Thin'), local('TTNorms-Thin'), url('../fonts/TTNorms-Thin.eot?#iefix') format('embedded-opentype'), url('../fonts/TTNorms-Thin.woff') format('woff'), url('../fonts/TTNorms-Thin.ttf') format('truetype');
+        font-weight: 100;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'TT Norms';
+        src: url('../fonts/TTNorms-Regular.eot');
+        src: local('TT Norms Regular'), local('TTNorms-Regular'), url('../fonts/TTNorms-Regular.eot?#iefix') format('embedded-opentype'), url('TTNorms-Regular.woff') format('woff'), url('../fonts/TTNorms-Regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'TT Norms';
+        src: url('../fonts/TTNorms-Italic.eot');
+        src: local('TT Norms Italic'), local('TTNorms-Italic'), url('../fonts/TTNorms-Italic.eot?#iefix') format('embedded-opentype'), url('../fonts/TTNorms-Italic.woff') format('woff'), url('../fonts/TTNorms-Italic.ttf') format('truetype');
+        font-weight: normal;
+        font-style: italic;
+    }
+    
+    @font-face {
+        font-family: 'TT Norms';
+        src: url('../fonts/TTNorms-Heavy.eot');
+        src: local('TT Norms Heavy'), local('TTNorms-Heavy'), url('../fonts/TTNorms-Heavy.eot?#iefix') format('embedded-opentype'), url('../fonts/TTNorms-Heavy.woff') format('woff'), url('../fonts/TTNorms-Heavy.ttf') format('truetype');
+        font-weight: 900;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'TT Norms';
+        src: url('../fonts/TTNorms-Light.eot');
+        src: local('TT Norms Light'), local('TTNorms-Light'), url('../fonts/TTNorms-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/TTNorms-Light.woff') format('woff'), url('../fonts/TTNorms-Light.ttf') format('truetype');
+        font-weight: 300;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'TT Norms';
+        src: url('../fonts/TTNorms-ExtraLight.eot');
+        src: local('TT Norms ExtraLight'), local('TTNorms-ExtraLight'), url('../fonts/TTNorms-ExtraLight.eot?#iefix') format('embedded-opentype'), url('../fonts/TTNorms-ExtraLight.woff') format('woff'), url('../fonts/TTNorms-ExtraLight.ttf') format('truetype');
+        font-weight: 200;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'TT Norms';
+        src: url('../fonts/TTNorms-Medium.eot');
+        src: local('TT Norms Medium'), local('TTNorms-Medium'), url('../fonts/TTNorms-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/TTNorms-Medium.woff') format('woff'), url('../fonts/TTNorms-Medium.ttf') format('truetype');
+        font-weight: 500;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'TT Norms';
+        src: url('../fonts/TTNorms-Black.eot');
+        src: local('TT Norms Black'), local('TTNorms-Black'), url('../fonts/TTNorms-Black.eot?#iefix') format('embedded-opentype'), url('../fonts/TTNorms-Black.woff') format('woff'), url('../fonts/TTNorms-Black.ttf') format('truetype');
+        font-weight: 900;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'TT Norms';
+        src: url('../fonts/TTNorms-ExtraBold.eot');
+        src: local('TT Norms ExtraBold'), local('TTNorms-ExtraBold'), url('../fonts/TTNorms-ExtraBold.eot?#iefix') format('embedded-opentype'), url('../fonts/TTNorms-ExtraBold.woff') format('woff'), url('../fonts/TTNorms-ExtraBold.ttf') format('truetype');
+        font-weight: 800;
+        font-style: normal;
+    }
+    /* Подключение стилей */
+    
+    body {
+        font-family: 'TT Norms';
+        color: #1A1A18;
+        font-weight: 400;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    
+    body.lock {
+        overflow: hidden;
+    }
+    
+    h1 {
+        margin: 0;
+    }
+    
+    a {
+        color: #1A1A18;
+        text-decoration: none;
+    }
+    
+    ul {
+        padding: 0;
+        list-style: none;
+    }
+    
+     ::placeholder {
+        color: #99A2AD;
+    }
+    /* Общие стили */
+    /* Заголовочный блок Header block*/
+    
+    header {
+        margin-top: 80px;
+    }
+    
+    .header__heading {
+        font-size: 28px;
+        line-height: 0.9;
+        font-weight: 700;
+    }
+    
+    .header__hit {
+        display: flex;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        font-size: 12px;
+        background-color: #FEC022;
+        color: white;
+        padding: 6px 6px 6px 11px;
+        border-radius: 4px;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+    }
+    
+    .header__hit:before {
+        content: '';
+        display: block;
+        width: 10px;
+        height: 15px;
+        margin-right: 10px;
+        background: url('../img/icon_hit.svg') no-repeat;
+    }
+    /* Заголовочный блок Header block */
+    /* Основной блок Home block */
+    
+    .wp__home {
+        background-image: url('../img/bg.svg');
+        background-size: cover;
+        margin-top: 37px;
+        margin-bottom: 40px;
+        padding: 0px 0 36px 0;
+        position: relative;
+    }
+    
+    .home__price-heading,
+    .home__diametr-heading,
+    .home__pack-heading,
+    .home__electro-heading {
+        display: flex;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        align-items: flex-end;
+        -webkit-box-align: flex-end;
+        -webkit-align-items: flex-end;
+        -ms-flex-align: flex-end;
+        font-size: 18px;
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+    
+    .home__price-heading:before,
+    .home__diametr-heading:before,
+    .home__pack-heading:before,
+    .home__electro-heading:before {
+        content: '';
+        width: 24px;
+        height: 24px;
+        background-size: contain!important;
+        display: block;
+        margin-right: 8px;
+    }
+    
+    .home__price-heading:before {
+        background: url('../img/icon_price.svg') no-repeat;
+    }
+    
+    .home__diametr-heading:before {
+        background: url('../img/icon_diameter.svg') no-repeat;
+    }
+    
+    .home__pack-heading:before {
+        background: url('../img/icon_pack.svg') no-repeat;
+    }
+    
+    .home__electro-heading:before {
+        background: url('../img/icon_electro.svg') no-repeat;
+    }
+    
+    .home__pack ul,
+    .home__diametr ul {
+        display: flex;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        justify-content: space-between;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        margin: 0;
+        position: relative;
+        z-index: 99;
+    }
+    
+    .home__pack span,
+    .home__diametr span,
+    .home__price span {
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 4px;
+        display: inline-block;
+        border: 1px solid #ffffff;
+        transition: .5s;
+    }
+    
+    .home__pack span:hover,
+    .home__diametr span:hover,
+    .home__price span:hover {
+        border: 1px solid #E31E25;
+        background: #FCE8E9;
+        transition: .5s;
+        cursor: pointer;
+    }
+    
+    .home__pack span.active,
+    .home__diametr span.active,
+    .home__price span.active {
+        background-color: #E31E25;
+        color: white;
+        border: 1px solid #E31E25;
+    }
+    
+    .home__electro img {
+        position: absolute;
+        right: -50%;
+        margin-top: 20px;
+        z-index: 0;
+    }
+    
+    .home__electro-img {
+        position: absolute;
+        left: -50%;
+        margin-top: 20px;
+        background-image: url('../img/electro-img.svg');
+        background-repeat: no-repeat;
+        display: block;
+        width: 509px;
+        height: 200px;
+    }
+    
+    .home__price span {
+        padding: 9px 10px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    
+    .home__callback a {
+        color: #E31E25;
+        padding: 20px 30px;
+        display: inline-block;
+        background: white;
+        border: 2px solid #E31E25;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 14px;
+        border-radius: 4px;
+        transition: .5s;
+        margin-top: 40px;
+    }
+    
+    .home__callback a:hover {
+        color: #ffffff;
+        background-color: #E31E25;
+        border: 2px solid #E31E25;
+        transition: .5s;
+    }
+    /* Основной блок Home block */
+    /* Модальное окно modal */
+    
+    .popup {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        top: 0;
+        left: 0;
+        opacity: 0;
+        visibility: hidden;
+        overflow-x: hidden;
+        overflow-y: auto;
+        transition: all 0.8s ease 0s;
+    }
+    
+    .popup__body {
+        min-height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 10px;
+    }
+    
+    .popup__content {
+        background-color: #ffffff;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+        color: #000;
+        max-width: 430px;
+        position: relative;
+        transition: all 0.8s ease 0s;
+        opacity: 0;
+        transform: translate(0px, -100%);
+    }
+    
+    .popup__close {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        padding: 12px 12px 0 0;
+        font-size: 20px;
+    }
+    
+    .popup__title {
+        font-size: 24px;
+        padding: 0px 0px 20px 0px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    
+    .popup.open {
+        opacity: 1;
+        visibility: visible;
+        transition: all 0.8s ease 0s;
+        z-index: 9999;
+    }
+    
+    .popup__text {
+        padding: 20px 30px 30px 30px;
+    }
+    
+    .popup.open .popup__content {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+    
+    .popup__content-heading {
+        background: #F1F2F2;
+        padding: 0 30px 0 30px;
+    }
+    
+    input[type="text"] {
+        width: 100%;
+        background: #F1F2F2;
+        border: 1px solid #99A2AD;
+        border-radius: 4px;
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .popup__politic {
+        font-size: 14px;
+        color: #898989;
+    }
+    
+    input.btn.send-btn {
+        font-family: 'TT Norms';
+        padding: 15px 30px;
+        border: 0;
+        text-transform: uppercase;
+        background: #E31E25;
+        border-radius: 4px;
+        color: white;
+        cursor: pointer;
+        letter-spacing: 0.02em;
+    }
+    
+    @media (min-width: 1400px) {
+        .content_h {
+            height: 73vh;
+        }
+    }
+    
+    @media (max-width: 567px) {
+        .bg-white {
+            padding: 0 10px;
+            margin: 0 10px;
+        }
+        .popup__title {
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 1.2;
+        }
+        .popup__text {
+            font-size: 14px;
+        }
+    }
+    /* Модальное окно modal */
