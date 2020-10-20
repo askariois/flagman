@@ -2,7 +2,7 @@
 <html <?php language_attributes(); ?>>
 
 <head>
-   <title>Flagman</title>
+   <title></title>
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
    <?php wp_head(); ?>
@@ -16,10 +16,18 @@
          <div class="row">
             <div class="col-xl-12">
                <div class="d-flex align-items-end">
-                  <h1 class="header__heading mr-3">ПЭ LB-52U ГОСТ</h1>
-                  <div class="header__hit">
+                  <h1 class="header__heading mr-3"><?php echo carbon_get_post_meta('7', 'crb_bl_title'); ?></h1>
+                  <?php
+                  if (carbon_get_post_meta('7', 'crb_show_hit')) {
+                     echo '
+                     <div class="header__hit">
                      Хит продаж
-                  </div>
+                  </div>';
+                  } else {
+                     echo '';
+                  }
+                  ?>
+
                </div>
             </div>
          </div>
@@ -41,8 +49,7 @@
                   <div class="home__price-heading">
                      Цена (без НДС)
                   </div>
-
-                  <span>от 107 ₽/кг </span>
+                  <span><?php echo carbon_get_post_meta('7', 'crb_bl_price'); ?> </span>
                </div>
             </div>
             <div class="col-lg-3  col-md-6 col-sm-6  ml-xl-2 order-xl-2 order-lg-3 order-3">
@@ -51,18 +58,14 @@
                      Диаметр
                   </div>
                   <ul>
-                     <li>
-                        <span>2,5 мм</span>
-                     </li>
-                     <li>
-                        <span>3 мм</span>
-                     </li>
-                     <li>
-                        <span>4 мм</span>
-                     </li>
-                     <li>
-                        <span>5 мм</span>
-                     </li>
+                     <?php
+                     $diametrs = carbon_get_post_meta('7', 'crb_bl_diametr');
+                     foreach ($diametrs as $diametr) :
+                     ?>
+                        <li>
+                           <span><?php echo $diametr['crb_bl_diametr_raz']; ?></span>
+                        </li>
+                     <?php endforeach; ?>
                   </ul>
                </div>
             </div>
@@ -72,18 +75,14 @@
                      Упаковка
                   </div>
                   <ul>
-                     <li>
-                        <span>1 кг</span>
-                     </li>
-                     <li>
-                        <span>1,5 кг</span>
-                     </li>
-                     <li>
-                        <span>2,5 кг</span>
-                     </li>
-                     <li>
-                        <span>5 кг</span>
-                     </li>
+                     <?php
+                     $packs = carbon_get_post_meta('7', 'crb_bl_pack');
+                     foreach ($packs as $pack) :
+                     ?>
+                        <li>
+                           <span><?php echo $pack['crb_bl_pack_ves']; ?></span>
+                        </li>
+                     <?php endforeach; ?>
                   </ul>
                </div>
             </div>

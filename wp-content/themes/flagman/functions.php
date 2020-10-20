@@ -7,9 +7,14 @@
  * @package flagman
  */
 
-if ( ! defined( '_S_VERSION' ) ) {
+ 
+require_once get_template_directory()  . '/inc/carbon-fields/carbon-fields-plugin.php';
+
+
+require_once get_template_directory()  . '/inc/custom-fields/post-meta.php';
+if (!defined('_S_VERSION')) {
 	// Replace the version number of the theme on each release.
-	define( '_S_VERSION', '1.0.0' );
+	define('_S_VERSION', '1.0.0');
 }
 
 if ( ! function_exists( 'flagman_setup' ) ) :
